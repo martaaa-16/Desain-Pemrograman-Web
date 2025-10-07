@@ -33,9 +33,17 @@ if (preg_match($pattern, $text, $matches)) {
 $pattern = '/go?d/';   // "o" boleh muncul 0 atau 1 kali
 $text = 'gd and god and good.';
 if (preg_match($pattern, $text, $matches)) {
+    echo "Cocokkan: " . $matches[0] . "<br>";
+} else {
+    echo "Tidak ada yang cocok!<br>";
+}
+
+// Soal no 5.6
+$pattern = '/go{1,2}d/';   // huruf "o" harus muncul 1 sampai 2 kali
+$text = 'gd god good goood';
+if (preg_match($pattern, $text, $matches)) {
     echo "Cocokkan: " . $matches[0];
 } else {
     echo "Tidak ada yang cocok!";
 }
-
 ?>
