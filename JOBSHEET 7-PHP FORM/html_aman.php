@@ -4,9 +4,9 @@
     <title>Form Input dengan htmlspecialchars</title>
 </head>
 <body>
-    <h2>Form Input</h2>
+    <h2>Form Input Email</h2>
     <form method="post" action="">
-        <label for="input">Masukkan teks:</label>
+        <label for="input">Masukkan Email:</label>
         <input type="text" name="input" id="input" required>
         <input type="submit" value="Submit">
     </form>
@@ -18,7 +18,13 @@
         $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
 
         echo "<h3>Hasil Input:</h3>";
-        echo "Output: " . $input;
+
+        // Validasi email
+        if (filter_var($input, FILTER_VALIDATE_EMAIL)) {
+            echo "<p style='color:green;'>Email valid: " . $input . "</p>";
+        } else {
+            echo "<p style='color:red;'>Email tidak valid!</p>";
+        }
     }
     ?>
 </body>
