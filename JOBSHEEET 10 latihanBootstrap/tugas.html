@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman Bootstrap Sederhana</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyWeb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- JUMBOTRON -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Selamat Datang di Halaman Bootstrap</h1>
+      <p class="lead">Halaman ini dibuat dengan memanfaatkan komponen Bootstrap seperti Navbar, Jumbotron, dan Card.</p>
+      <a href="#galeri" class="btn btn-primary btn-lg mt-3">Lihat Galeri</a>
+    </div>
+  </section>
+
+  <!-- GAMBAR / GALERI -->
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">Galeri Gambar</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3">
+        <img src="https://picsum.photos/200/120" alt="Oval" class="img-fluid img-oval shadow">
+        <p class="mt-2">Bentuk Oval</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://picsum.photos/200" alt="Lingkaran" class="img-fluid rounded-circle shadow">
+        <p class="mt-2">Bentuk Lingkaran</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://picsum.photos/200/200" alt="Rounded" class="img-fluid img-rounded shadow">
+        <p class="mt-2">Bentuk Rounded</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://picsum.photos/250/150" alt="Kotak" class="img-fluid shadow">
+        <p class="mt-2">Bentuk Persegi Panjang</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 MyWeb | Dibuat menggunakan Bootstrap</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
